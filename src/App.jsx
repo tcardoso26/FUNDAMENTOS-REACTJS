@@ -21,8 +21,8 @@ const posts = [
     content: [
       { type: "paragraph", content: "Fala galeraa" },
       { type: "paragraph", content: "Acabei de subir mais um projeto no meu portifolio. É um projeto que eu fiz nmo NLW !!" },
-      { type: "link", content: "thiago.cardoso/timeDev"},
- 
+      { type: "link", content: "thiago.cardoso/timeDev" },
+
     ],
     publishedAt: new Date("2024-06-06 20:00:00"),
   }, //array dentro de outro array
@@ -36,14 +36,14 @@ const posts = [
     content: [
       { type: "paragraph", content: "Fala galeraa" },
       { type: "paragraph", content: "Acabei de subir mais um projeto no meu portifolio. É um projeto que eu fiz nmo NLW !!" },
-      { type: "link", content: "thiago.cardoso/timeDev"},
- 
+      { type: "link", content: "thiago.cardoso/timeDev" },
+
     ],
     publishedAt: new Date("2024-06-06 20:00:00"),
   }, //array dentro de outro array
 ];
 
-// iteração = repetir alguma coisa, criar uma estrutura de repetição
+// iteração = repetir alguma coisa, criar uma estrutura de repetição, iterar um array, percorrer um array
 
 export function App() {
   return (
@@ -53,16 +53,8 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            autor="Thiago Cardoso"
-            content=" lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
-          />
-          <Post
-            author="Gabriel medina"
-            content=" Um novo post foi adicionado"
-          />
+          {posts.forEach}
         </main>
-
       </div>
     </div>
   )

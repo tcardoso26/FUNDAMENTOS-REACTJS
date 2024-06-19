@@ -29,7 +29,12 @@ export function Post() {
              </p>
            </div>
 
-            <form className={styles.commentForm} onSubmit={(e)=>{e.preventDefault()}}>
+            <form 
+                className={styles.commentForm} 
+                onSubmit={(e) => {
+                    e.preventDefault()
+                }}
+            >
                 <strong>Deixe seu feedback</strong>
 
                 <textarea
